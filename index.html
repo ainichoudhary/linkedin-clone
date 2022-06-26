@@ -1,45 +1,227 @@
-<!DOCTYPE html lang="EN">
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Documents</title>
-        <link rel="stylesheet" href="app.css" />
-    </head>
-    <>
-        <nav>
-            <div class="heading">
-                <div class="box1">
-                
-                <h1 href="#">Linked</h1> <img class="box" src="image/1.png"/>
-            </div>
-            </div>
-            <ul class="nav-links">
-                <li><a class="active" href="#">Discover</a></li>
-                <li><a href="pages/people.html">people</a></li>
-                <li><a href="pages/Learning.html">Learning</a></li>
-                <li><a href="pages/Job.html">Job</a></li>
-                <li><a href=""</a></li>
-            </ul>
-            <hr/>
-            <button id="sign in-btn" class="Sign In">Join now</button>
-            <button id="sign in-btn" class="Sign In">Sign In</button>
-        </nav>
-        <div class="note">
-            <p>Welcome to your<br>
-             professional Community </p>
+<!DOCTYPE HTML >
+<html lang="EN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+<nav class="section">
+    <div class="logo">
+        <h1>LinkedIn</h1>
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </div>
+    <div class="navigation">
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a class="active" href="#">
+                    <ion-icon name="disc"></ion-icon>
+                    <span>Discover</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <ion-icon name="people"></ion-icon>
+                    <span>People</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <span>Learning</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <ion-icon name="cube"></ion-icon>
+                    <span>Job</span>
+                </a>
+            </li>
+        </ul>
+        <div class="vertical-line">
         </div>
-        <div class="note.img">
-            <img class="beta" src="image/2.png">
-        </div>
-    </hr>
-        <div class="container">
-            <input type="text" placeholder="Email or Phone number" name="pn" id="pn" required />
-            <input type="password" placeholder="password(8+character)" name="psw" id="psw" required />
+        <div>
+            <button class="pill-btn join-now">Join now</button>
 
+            <button class="pill-btn sign-in">Sign In</button>
         </div>
-    </body>
+    </div>
+</nav>
+
+<div class="section section-welcome">
+    <div class="login-options">
+        <p class="welcome-message">Welcome to your professional Community</p>
+        <div class="login-form">
+            <div>
+                <label for="email"></label>
+                <input id="email" class="input-field" type="text" placeholder="Email or Phone number"/>
+            </div>
+            <div>
+                <label for="password"></label>
+                <input id=password class="input-field"
+                       type="password"
+                       placeholder="password (8+ character)"
+                />
+            </div>
+            <p class="note">
+                By clicking Agree & Join, you agree to the LinkedIn
+                <b>User Agreement, Privacy Policy,</b> and <b>Cookie Policy.</b>
+            </p>
+            <div>
+                <button class="pill-btn signup-btn agree-join">Agree & Join</button>
+                <button class="pill-btn signup-btn google-btn">
+                    <ion-icon name="logo-google"></ion-icon>
+                    Join With Google
+                </button>
+                <div class="separator">or</div>
+                <button class="pill-btn signup-btn already-btn">Already on LinkedIn?<b>sign In</b></button>
+            </div>
+        </div>
+    </div>
+    <div class="login-graphic">
+        <img alt="female" src="image/man-working.svg"/>
+    </div>
+</div>
+<div class="section content-point">
+    <div class="explore">
+        <p>Explore topics you are interested in</p>
+    </div>
+
+    <div class="caption">
+        <p>CONTENT TOPICS</p>
+
+        <div class="eight-point">
+            <button class="point1">See All Topic</button>
+
+            <button class="point">Remote</button>
+            <button class="point">Work From Home</button>
+
+            <button class="point">Retirement</button>
+            <button class="point">Internships</button>
+
+            <button class="point">Freelancer</button>
+            <br>
+
+            <button class="point">Salary and Compensation</button>
+
+            <button class="point">Starting a Job</button>
+        </div>
+    </div>
+</div>
+
+<div class="white-box">
+    <div class="Internships">
+        <p>
+            Find the right job or<br/>
+            internship for you
+        </p>
+    </div>
+
+    <div class="search">
+        <p>SUGGESTED SEARCHES</p>
+
+        <div class="many-option">
+            <button class="option">Engineering</button>
+
+            <button class="option">Business Development</button>
+            <button class="option">Finance</button>
+            <br>
+            <button class="option">Arts and Design</button>
+
+            <button class="option">Marketing</button>
+
+
+            <button class="option">Administrative Assistant</button>
+            <button class="option">Retail associate</button>
+
+            <button class="option">Customer Service</button>
+
+            <button class="option">Information Technology</button>
+
+            <button class="option">
+                Program and Project Management
+            </button>
+
+            <button class="option">Human Resources</button>
+            <button class="option">sales</button>
+            <button class="option">Accounting</button>
+            <br>
+            <br>
+            <button class="Show-more">Show more</button>
+        </div>
+    </div>
+</div>
+<div class="job">
+    <div class="people"><p> Post your job for <br> millions of people to <br>see</p></div>
+    <button class="post">Post of job</button>
+</div>
+
+<div class="work">
+    <div class="right">
+        <b>Let the right people know <br>you’re open to work</b><br>
+        With the Open To Work feature, you can<br> privately tell recruiters or publicly share<br> with the LinkedIn
+        community that you are <br>looking for new job opportunities.
+    </div>
+    <div class="right-img">
+        <img alt="tea" src="image/67.png"/>
+    </div>
+</div>
+
+<footer>
+    <ul class="li-footer">
+        <li>
+            <a href="#" id="linkedin-logo"> Linked
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="#"> 2022</a>
+        </li>
+        <li>
+            <a href="#"> about</a>
+        </li>
+        <li>
+            <a href="#"> Accessibility</a>
+        </li>
+        <li>
+            <a href="#"> User Agreement</a>
+        </li>
+        <li>
+            <a href="#"> Privacy Policy</a>
+        </li>
+        <li>
+            <a href="#"> Cookies Policy</a>
+        </li>
+        <li>
+            <a href="#">Copyright Policy </a>
+        </li>
+        <li>
+            <a href="#">Brand Policy </a>
+        </li>
+        <li>
+            <a href="#">Guest Controls </a>
+        </li>
+        <li>
+            <a href="#">Community Guid lines </a>
+        </li>
+        <li>
+            <a href="#">Language </a>
+        </li>
+    </ul>
+</footer>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://unpkg.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"
+/>
+</body>
 </html>
-
-
