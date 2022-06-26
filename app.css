@@ -1,0 +1,533 @@
+/** {*/
+/*    outline: 1px solid red;*/
+/*    outline-offset: -1px;*/
+/*}*/
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.section {
+    margin-top: 1rem
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    margin: auto;
+    height: 5rem;
+    max-width: 1128px;
+}
+
+.logo {
+    display: flex;
+    margin: 1rem;
+    width: 127px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #0a66c2;
+}
+
+.logo ion-icon {
+    font-size: xx-large;
+}
+
+.navigation {
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation ion-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-links {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+}
+
+.nav-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.nav-links span {
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.vertical-line {
+    float: left;
+    width: 1px;
+    height: 2.5rem;
+    background-color: #0000004d;
+}
+
+.pill-btn {
+    padding: 12px;
+    background: none;
+    width: 115px;
+    height: 48px;
+    border-radius: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.pill-btn:hover {
+    cursor: pointer;
+
+}
+
+.join-now {
+    border: none;
+
+}
+
+.join-now:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+
+.sign-in {
+    border: 2px solid #0a66c2;
+    color: #0a66c2;
+}
+
+.sign-in:hover {
+    background-color: rgba(112, 181, 249, 0.1);
+    cursor: pointer;
+}
+
+.section-welcome {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    display: flex;
+    color: #8f5849;
+    padding-left: 34px;
+}
+
+.section-welcome .login-graphic img {
+    width: 700px;
+    height: 560px;
+}
+
+.section-welcome h4 {
+    margin-top: 80px;
+    padding-left: 20px;
+}
+
+.login-options .welcome-message {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.input-field {
+    width: 100%;
+    height: 3rem;
+}
+
+.login-options div {
+    margin-top: 12px;
+}
+
+.login-options .login-form {
+    max-width: 25rem;
+}
+
+.input-field::placeholder {
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.note {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.note b {
+    color: #0a66c2;
+}
+
+
+.signup-btn {
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.agree-join {
+    border: none;
+    background-color: #2977C9;
+    color: white;
+}
+
+.agree-join:hover {
+    background-color: #2977c9;
+    cursor: pointer;
+}
+
+.google-btn {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: black;
+    background-color: white;
+}
+
+.google:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.already-btn {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: black;
+    background-color: white;
+}
+
+.already b {
+    color: #0a66c2;
+}
+
+.already:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.content-point {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: #f3f2f0;
+    height: 22rem;
+}
+
+.explore {
+    margin-left: 5rem;
+    max-width: 28rem;
+    font-size: 48px;
+    font-weight: 250;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.search {
+    margin-left: 3rem;
+}
+
+
+.caption {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.25;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.point {
+    padding: 1rem;
+    border: 1px solid #3D3D3C;
+    background: none;
+    border-radius: 3rem;
+    font-size: smaller;
+    color: #3C3C3C;
+    box-shadow: 0 0 0 1px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    margin-bottom: 0.3rem;
+
+}
+.eight-point{
+    max-width: 25rem;
+}
+
+.point:hover {
+    background-color: silver;
+    cursor: pointer;
+}
+
+.point1 {
+    padding: 1rem;
+    border: 2px solid #1c71c5;
+    background: none;
+    border-radius: 3rem;
+    font-size: medium;
+    color: #1c71c5;
+    font-weight: bold;
+
+}
+
+
+.point1:hover {
+    background-color: #c9ffff;
+    cursor: pointer;
+}
+
+.white-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+}
+
+.Internships {
+    margin-left: 75px;
+    width: 75%;
+    font-size: 45px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.search {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.25;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.option {
+    padding: 1rem;
+    border: 1px solid black;
+    background: none;
+    border-radius: 3rem;
+    font-size: medium;
+    color: #3F3F3F;
+    font-weight: bold;
+    margin-right: 16px;
+    margin-top: 12px;
+}
+
+.option:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.Show-more {
+    padding: 1rem;
+    border: none;
+    background: white;
+    font-weight: bold;
+}
+
+.Show-more:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.job {
+    background-color: #F1ECE5;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.people {
+    color: #B24020;
+    font-size: 43px;
+
+}
+
+.post {
+    padding: 1rem;
+    border: 1px solid #0a66c2;
+    background: none;
+    border-radius: 3rem;
+    font-size: medium;
+    color: #0a66c2;
+    font-weight: bold;
+    margin-right: 533px;
+}
+
+.post:hover {
+    background-color: rgba(112, 181, 249, 0.1);
+    cursor: pointer;
+}
+
+.button {
+    background-color: #F3F2F0;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+}
+
+.previous {
+    margin-right: 66px;
+    background: none;
+    border: none;
+
+}
+
+.next {
+    margin-right: 170px;
+    padding: 1rem;
+    border: none;
+    background: none;
+    border-radius: 3rem;
+    font-weight: bold;
+}
+
+.next:hover {
+    background-color: #F1ECE5;
+    cursor: pointer;
+}
+
+
+.work {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    background-color: #F3F2F0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.right b {
+    font-size: 34px;
+    color: #8F5849;
+}
+
+.right {
+    color: #5B5B5A;
+    font-size: 30px;
+    margin-left: 5rem;
+}
+
+.right-img {
+    margin-right: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.right-img img {
+    width: 30rem;
+}
+
+.link {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 156px
+
+}
+
+.connection {
+    padding-left: 140px;
+    padding-top: 80px;
+}
+
+.connected {
+    font-size: 56px;
+
+}
+
+.you-know {
+    padding: 2rem;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    width: 400px;
+    height: 63px;
+    border-radius: 3rem;
+
+}
+
+.you-know:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.learn {
+    margin-right: 150px;
+
+}
+
+.succeed {
+    font-size: 50px;
+}
+
+.about {
+    padding: 2rem;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    width: 400px;
+    height: 63px;
+    padding-top: 23px;
+
+}
+
+.about:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.li-footer {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: small;
+}
+
+.li-footer a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+
+
+
+
+
